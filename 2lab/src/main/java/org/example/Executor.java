@@ -1,0 +1,15 @@
+package org.example;
+
+import java.util.ArrayList;
+
+public class Executor {
+    iCPU cpu;
+
+    Executor(iCPU i) {
+        cpu = i;
+    }
+
+    void run(ArrayList<Command> C) {
+        for (Command i: C) {cpu.exec(i);}
+    }
+}
